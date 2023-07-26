@@ -1,3 +1,0 @@
-<?php
-  // PHP va aqui
-?>
