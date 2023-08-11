@@ -15,5 +15,24 @@
     Si creamos una funcion __construct(), PHP llamara automaticamente a esta funcion cuando cree un objeto de un clase.
   */
 
-  
+  class Car {
+    public $color;
+    public $model;
+    public function
+
+  __construct($color, $model) {
+      $this->color = $color;
+      $this->model = $model;
+    }
+
+    public function message() {
+      return "Mi carro es un " . $this->color . " " . $this->model . "!";
+    }
+  }
+
+  $myCar = new Car("negro", "Volvo");
+  echo $myCar -> message();
+  echo "<br>";
+  $myCar = new Car("rojo", "Toyota");
+  echo $myCar -> message();
 ?>
